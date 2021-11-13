@@ -1,0 +1,68 @@
+<?php
+
+namespace App\Entities;
+
+class IcomAlocado extends AbstractEntity
+{
+	protected $datamap = [];
+	protected $dates   = [
+		'created_at',
+		'updated_at',
+		'deleted_at',
+	];
+	protected $casts   = [
+        'id' => 'int',
+        'id_alocacao' => 'int',
+        'id_usuario' => '?int',
+        'nome_usuario' => 'string',
+        'id_funcao' => '?int',
+        'matricula' => '?int',
+        'categoria' => 'string',
+        'nota_fiscal_pagto' => '?string',
+        'data_emissao_pagto' => '?date',
+        'codigo_alfa_pagto' => '?string',
+        'status_pagto' => '?bool',
+        'justificativa_pagto' => '?string',
+        'data_liberacao_pagto' => '?date',
+        'data_emissao_nota' => '?date',
+        'data_aprovacao_pagto' => '?datetime',
+        'id_usuario_aprovador_pagto' => '?int',
+        'nome_aprovador_pagto' => '?string',
+        'observacoes_pagto' => '?string',
+        'qtde_horas_pagto' => '?time',
+        'valor_total_pagto' => '?decimal',
+        'valor_hora_mei' => '?decimal',
+        'qtde_horas_mei' => '?time',
+        'qtde_horas_dia_mei' => '?time',
+        'valor_mes_clt' => '?decimal',
+        'qtde_meses_clt' => '?time',
+        'qtde_horas_dia_clt' => '?time',
+        'horario_entrada' => '?time',
+        'horario_intervalo' => '?time',
+        'horario_retorno' => '?time',
+        'horario_saida' => '?time',
+        'desconto_folha' => '?string',
+        'comprometimento' => '?bool',
+        'pontualidade' => '?bool',
+        'script' => '?bool',
+        'simpatia' => '?bool',
+        'empatia' => '?bool',
+        'postura' => '?bool',
+        'ferramenta' => '?bool',
+        'tradutorio' => '?bool',
+        'linguistico' => '?bool',
+        'neutralidade' => '?bool',
+        'discricao' => '?bool',
+        'fidelidade' => '?bool',
+        'tempo_medio' => '?time',
+        'qtde_atendidas' => '?int',
+        'qtde_recusadas' => '?int',
+        'taxa_ocupacao' => '?decimal',
+        'taxa_absenteismo' => '?decimal',
+        'qtde_reclamacoes' => '?int',
+        'extra_1' => '?bool',
+        'extra_2' => '?bool',
+        'extra_3' => '?bool',
+        'feedback' => '?string',
+    ];
+}

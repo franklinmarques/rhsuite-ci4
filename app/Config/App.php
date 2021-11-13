@@ -36,7 +36,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $indexPage = '';
+    public $indexPage = '_app/';
 
     /**
      * --------------------------------------------------------------------------
@@ -461,4 +461,18 @@ class App extends BaseConfig
      * @var bool
      */
     public $CSPEnabled = false;
+
+    /**
+     * Will attempt to get environment variables with names
+     * that match the properties of the child class.
+     *
+     * The "shortPrefix" is the lowercase-only config class name.
+     */
+    public function __construct()
+    {
+        if ($url = str_replace('/index.php', '', $_SERVER['SCRIPT_NAME'])) {
+            $this->indexPage = $url . '/';
+        }
+        parent::__construct();
+    }
 }

@@ -77,3 +77,72 @@ defined('EXIT_USER_INPUT')     || define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       || define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      || define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      || define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+
+/*
+|--------------------------------------------------------------------------
+| Status de usuário
+|--------------------------------------------------------------------------
+|
+| Índices de status utilizados na aplicação
+|
+*/
+defined('ESTADO_DEFAULT') || define('ESTADO_DEFAULT', 35); // Estado de São Paulo
+defined('CIDADE_DEFAULT') || define('CIDADE_DEFAULT', 3550308); // Cidade de São Paulo
+
+/*
+|--------------------------------------------------------------------------
+| Status de usuário
+|--------------------------------------------------------------------------
+|
+| Índices de status utilizados na aplicação
+|
+*/
+defined('USUARIO_ATIVO')                    || define('USUARIO_ATIVO', 1);
+defined('USUARIO_INATIVO')                  || define('USUARIO_INATIVO', 2);
+defined('USUARIO_EM_EXPERIENCIA')           || define('USUARIO_EM_EXPERIENCIA', 3);
+defined('USUARIO_EM_DESLIGAMENTO')          || define('USUARIO_EM_DESLIGAMENTO', 4);
+defined('USUARIO_DESLIGADO')                || define('USUARIO_DESLIGADO', 5);
+defined('USUARIO_AFASTADO_MATERNIDADE')     || define('USUARIO_AFASTADO_MATERNIDADE', 6);
+defined('USUARIO_AFASTADO_APOSENTADORIA')   || define('USUARIO_AFASTADO_APOSENTADORIA', 7);
+defined('USUARIO_AFASTADO_INSS')            || define('USUARIO_AFASTADO_INSS', 8);
+defined('USUARIO_AFASTADO_ACIDENTE')        || define('USUARIO_AFASTADO_ACIDENTE', 9);
+defined('USUARIO_DESISTIU_VAGA')            || define('USUARIO_DESISTIU_VAGA', 10);
+defined('USUARIO_AFASTADO_ATESTADO')        || define('USUARIO_AFASTADO_ATESTADO', 11);
+defined('USUARIO_ATIVAR')                   || define('USUARIO_ATIVAR', 12);
+defined('USUARIO_DISTRATO_TEMPORARIO')      || define('USUARIO_DISTRATO_TEMPORARIO', 13);
+defined('USUARIO_DISTRATO')                 || define('USUARIO_DISTRATO', 14);
+
+/*
+|--------------------------------------------------------------------------
+| Níveis de acesso de usuário
+|--------------------------------------------------------------------------
+|
+| Índices de níveis de acesso utilizados na aplicação
+|
+*/
+defined('NIVEL_ACESSO_ADMINISTRADOR')           || define('NIVEL_ACESSO_ADMINISTRADOR', 1);
+defined('NIVEL_ACESSO_MULTIPLICADOR')           || define('NIVEL_ACESSO_MULTIPLICADOR', 2);
+defined('NIVEL_ACESSO_GESTOR')                  || define('NIVEL_ACESSO_GESTOR', 3);
+defined('NIVEL_ACESSO_COLABORADOR_CLT')         || define('NIVEL_ACESSO_COLABORADOR_CLT', 4);
+defined('NIVEL_ACESSO_CLIENTE_NIVEL_1')         || define('NIVEL_ACESSO_CLIENTE_NIVEL_1', 5);
+defined('NIVEL_ACESSO_SELECIONADOR')            || define('NIVEL_ACESSO_SELECIONADOR', 6);
+defined('NIVEL_ACESSO_PRESIDENTE')              || define('NIVEL_ACESSO_PRESIDENTE', 7);
+defined('NIVEL_ACESSO_GERENTE')                 || define('NIVEL_ACESSO_GERENTE', 8);
+defined('NIVEL_ACESSO_COORDENADOR')             || define('NIVEL_ACESSO_COORDENADOR', 9);
+defined('NIVEL_ACESSO_SUPERVISOR')              || define('NIVEL_ACESSO_SUPERVISOR', 10);
+defined('NIVEL_ACESSO_ENCARREGADO')             || define('NIVEL_ACESSO_ENCARREGADO', 11);
+defined('NIVEL_ACESSO_LIDER')                   || define('NIVEL_ACESSO_LIDER', 12);
+defined('NIVEL_ACESSO_CUIDADOR_COMUNITARIO')    || define('NIVEL_ACESSO_CUIDADOR_COMUNITARIO', 13);
+defined('NIVEL_ACESSO_COLABORADOR_PJ')          || define('NIVEL_ACESSO_COLABORADOR_PJ', 14);
+defined('NIVEL_ACESSO_REPRESENTANTE')           || define('NIVEL_ACESSO_REPRESENTANTE', 15);
+defined('NIVEL_ACESSO_COLABORADOR_MEI')         || define('NIVEL_ACESSO_COLABORADOR_MEI', 16);
+defined('NIVEL_ACESSO_VISTORIADOR')             || define('NIVEL_ACESSO_VISTORIADOR', 17);
+defined('NIVEL_ACESSO_DIRETOR')                 || define('NIVEL_ACESSO_DIRETOR', 18);
+defined('NIVEL_ACESSO_SUPERVISOR_REQUISITANTE') || define('NIVEL_ACESSO_SUPERVISOR_REQUISITANTE', 19);
+defined('NIVEL_ACESSO_COLABORADOR_ME')          || define('NIVEL_ACESSO_COLABORADOR_ME', 20);
+defined('NIVEL_ACESSO_COLABORADOR_LTDA')        || define('NIVEL_ACESSO_COLABORADOR_LTDA', 21);
+defined('NIVEL_ACESSO_AUTONOMO')                || define('NIVEL_ACESSO_AUTONOMO', 22);
+defined('NIVEL_ACESSO_FORNECEDOR')              || define('NIVEL_ACESSO_FORNECEDOR', 23);
+defined('NIVEL_ACESSO_CLIENTE_NIVEL_2')         || define('NIVEL_ACESSO_CLIENTE_NIVEL_2', 24);
+defined('NIVEL_ACESSO_CLIENTE_NIVEL_0')         || define('NIVEL_ACESSO_CLIENTE_NIVEL_0', 25);
